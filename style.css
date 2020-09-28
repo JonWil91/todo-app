@@ -7,9 +7,9 @@ html, body {
     width: 360px;
 }
 
-#inputField {
+#input-field {
     width: 300px;
-    height: 46px;
+    height: 50px;
     border-width: 0;
     border: 1px solid black;
     outline: none;
@@ -17,12 +17,13 @@ html, body {
     vertical-align: middle;
 }
 
-#addToDo {
-    height: 50px;
-    width: 50px;
+#add-task {
+    height: 54px;
+    width: 54px;
     border: 1px solid black;
     vertical-align: middle;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .paragraph-styling {

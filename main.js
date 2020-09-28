@@ -1,14 +1,14 @@
-let addToDoButton = document.getElementById('addToDo');
-let toDoContainer = document.getElementById('toDoContainer');
-let inputField = document.getElementById('inputField');
+let addTaskButton = document.getElementById('add-task');
+let listContainer = document.getElementById('list-container');
+let inputField = document.getElementById('input-field');
 
-addToDoButton.addEventListener('click', function(){
+addTaskButton.addEventListener('click', function(){
     let paragraph = document.createElement('p');
     let paragraphButton = document.createElement('button')
     paragraph.classList.add('paragraph-styling');
     paragraphButton.classList.add('paragraph-button');
     paragraph.innerText = inputField.value;
-    toDoContainer.appendChild(paragraph);
+    listContainer.appendChild(paragraph);
     paragraph.appendChild(paragraphButton);
     inputField.value = "";
     paragraphButton.addEventListener('click', function(){
@@ -16,6 +16,6 @@ addToDoButton.addEventListener('click', function(){
         paragraphButton.style.backgroundColor = "red";
     })
     paragraphButton.addEventListener('dblclick', function(){
-        toDoContainer.removeChild(paragraph);
+        listContainer.removeChild(paragraph);
     })
 })
